@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ultra.view.HomeController">
+    <children>
+        <TitledPane animated="false" prefHeight="400.0" prefWidth="600.0" text="Ultra Business">
+            <font>
+                <Font name="Corbel Bold" size="20.0"/>
+            </font>
+            <content>
+                <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0">
+                    <children>
+                        <MenuBar minHeight="-Infinity" prefHeight="40.0" prefWidth="800.0">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="Pessoas">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: cliente;" text="Cliente"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: fornecedor;" text="Fornecedor"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: funcionario;" text="Funcionario"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: cargo;" text="Cargo"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Endereços">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: enderecoCliente;" text="Cliente"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: enderecoFornecedor;" text="Fornecedor"/>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo"
+                                                  style="href: enderecoFuncionario;" text="Funcionario"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Estoque">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#goTo" style="href: produto;"
+                                                  text="Produto"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Financeiro">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="About"/>
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </children>
+                </Pane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>
